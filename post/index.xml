@@ -598,18 +598,18 @@ F8 / ⇧F8 跳到下一个/前一个错误或警告
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">doodlexu@MacBook Web % tree
 </span></span><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── Web
-</span></span><span class="line"><span class="cl">│   ├── __init__.py
-</span></span><span class="line"><span class="cl">│   ├── __pycache__
-</span></span><span class="line"><span class="cl">│   │   ├── __init__.cpython-39.pyc
-</span></span><span class="line"><span class="cl">│   │   ├── index.cpython-39.pyc
-</span></span><span class="line"><span class="cl">│   │   ├── settings.cpython-39.pyc
-</span></span><span class="line"><span class="cl">│   │   ├── urls.cpython-39.pyc
-</span></span><span class="line"><span class="cl">│   │   └── wsgi.cpython-39.pyc
-</span></span><span class="line"><span class="cl">│   ├── asgi.py
-</span></span><span class="line"><span class="cl">│   ├── index.py
-</span></span><span class="line"><span class="cl">│   ├── settings.py
-</span></span><span class="line"><span class="cl">│   ├── urls.py
-</span></span><span class="line"><span class="cl">│   └── wsgi.py
+</span></span><span class="line"><span class="cl">│   ├── __init__.py
+</span></span><span class="line"><span class="cl">│   ├── __pycache__
+</span></span><span class="line"><span class="cl">│   │   ├── __init__.cpython-39.pyc
+</span></span><span class="line"><span class="cl">│   │   ├── index.cpython-39.pyc
+</span></span><span class="line"><span class="cl">│   │   ├── settings.cpython-39.pyc
+</span></span><span class="line"><span class="cl">│   │   ├── urls.cpython-39.pyc
+</span></span><span class="line"><span class="cl">│   │   └── wsgi.cpython-39.pyc
+</span></span><span class="line"><span class="cl">│   ├── asgi.py
+</span></span><span class="line"><span class="cl">│   ├── index.py
+</span></span><span class="line"><span class="cl">│   ├── settings.py
+</span></span><span class="line"><span class="cl">│   ├── urls.py
+</span></span><span class="line"><span class="cl">│   └── wsgi.py
 </span></span><span class="line"><span class="cl">├── db.sqlite3
 </span></span><span class="line"><span class="cl">├── manage.py
 </span></span><span class="line"><span class="cl">└── templates
@@ -692,12 +692,12 @@ F8 / ⇧F8 跳到下一个/前一个错误或警告
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">doodlexu@MacBook Web % tree
 </span></span><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── Web
-</span></span><span class="line"><span class="cl">│   ├── __init__.py
-</span></span><span class="line"><span class="cl">│   ├── asgi.py
-</span></span><span class="line"><span class="cl">│   ├── index.py
-</span></span><span class="line"><span class="cl">│   ├── settings.py
-</span></span><span class="line"><span class="cl">│   ├── urls.py
-</span></span><span class="line"><span class="cl">│   └── wsgi.py
+</span></span><span class="line"><span class="cl">│   ├── __init__.py
+</span></span><span class="line"><span class="cl">│   ├── asgi.py
+</span></span><span class="line"><span class="cl">│   ├── index.py
+</span></span><span class="line"><span class="cl">│   ├── settings.py
+</span></span><span class="line"><span class="cl">│   ├── urls.py
+</span></span><span class="line"><span class="cl">│   └── wsgi.py
 </span></span><span class="line"><span class="cl">└── manage.py
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="m">1</span> directory, <span class="m">7</span> files
