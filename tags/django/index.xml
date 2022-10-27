@@ -368,15 +368,15 @@ MySQL 是 Web 应用中最常用的数据库。本文以MySQL为例，用Django�
 <p>创建项目可以用<code>django-admin</code>的<code>startproject</code>来创建所需的项目，具体格式为</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">django-admin startproject 项目名称
 </span></span></code></pre></div><p>一个全新的项目目录结构如下：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">doodlexu@MacBook Desktop % <span class="nb">cd</span> Web 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">doodlexu@MacBook Desk
 </span></span><span class="line"><span class="cl">doodlexu@MacBook Web % tree
 </span></span><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── Web
-</span></span><span class="line"><span class="cl">│   ├── __init__.py
-</span></span><span class="line"><span class="cl">│   ├── asgi.py
-</span></span><span class="line"><span class="cl">│   ├── settings.py
-</span></span><span class="line"><span class="cl">│   ├── urls.py
-</span></span><span class="line"><span class="cl">│   └── wsgi.py
+</span></span><span class="line"><span class="cl">│   ├── __init__.py
+</span></span><span class="line"><span class="cl">│   ├── asgi.py
+</span></span><span class="line"><span class="cl">│   ├── settings.py
+</span></span><span class="line"><span class="cl">│   ├── urls.py
+</span></span><span class="line"><span class="cl">│   └── wsgi.py
 </span></span><span class="line"><span class="cl">└── manage.py
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="m">1</span> directory, <span class="m">6</span> files
