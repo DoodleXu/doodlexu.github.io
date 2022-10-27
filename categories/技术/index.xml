@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术 on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 08 Mar 2021 14:10:01 +0000</lastBuildDate><atom:link href="https://laoooo.cn/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Mac上配置密钥登陆Linux</title>
+      <link>https://laoooo.cn/%E5%9C%A8mac%E4%B8%8A%E9%85%8D%E7%BD%AE%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86linux/</link>
+      <pubDate>Mon, 08 Mar 2021 14:10:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/%E5%9C%A8mac%E4%B8%8A%E9%85%8D%E7%BD%AE%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86linux/</guid>
+      <description>简介 在 Mac 上配置 SSH 密钥登录远程的 Linux 相关配置 创建本地的 SSH 密钥 ssh-keygen -t rsa -C &amp;#39;example@example.com&amp;#39; -t 指定密钥类型，默认即 rsa -C 设置注释文字，比如你的邮箱 在配置过程中，可以根据</description>
+      <content:encoded><![CDATA[<h1 id="简介">简介</h1>
+<blockquote>
+<p>在 Mac 上配置 SSH 密钥登录远程的 Linux</p>
+</blockquote>
+<h1 id="相关配置">相关配置</h1>
+<h2 id="创建本地的-ssh-密钥">创建本地的 SSH 密钥</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s1">&#39;example@example.com&#39;</span>
+</span></span><span class="line"><span class="cl">-t 指定密钥类型，默认即 rsa
+</span></span><span class="line"><span class="cl">-C 设置注释文字，比如你的邮箱
+</span></span></code></pre></div><p>在配置过程中，可以根据提示设置<code>私钥</code>密码，我这里就不设置，默认为空，回车即可。</p>
+<p>生成的密钥默认在<code>家目录</code>下的<code>.ssh</code>目录下</p>
+<h2 id="上传公钥到远程-linux-服务器">上传公钥到远程 Linux 服务器</h2>
+<p>使用 scp 复制公钥到远程服务器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">scp -P &lt;端口号&gt; ~/.ssh/id_rsa.pub &lt;用户名&gt;@&lt;ip地址&gt;:/home/id_rsa.pub
+</span></span></code></pre></div><h2 id="配置远程-linux-的私钥">配置远程 Linux 的私钥</h2>
+<p>登录远程 Linux 服务器，把公钥追加到服务器 ssh 认证文件中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /home/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+</span></span></code></pre></div><p>如果在 家目录 没有 .ssh 目录或 authorized_keys 文件，可以创建一下，并授予 authorized_keys 文件 600 权限</p>
+<p>然后在执行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /home/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+</span></span></code></pre></div><h2 id="创建配置文件快速登录">创建配置文件快速登录</h2>
+<p>每次登录都需要输入用户名和地址，这样也是太麻烦，可以添加配置文件，使用<code>别名</code>来登录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">% vi ~/.ssh/config
+</span></span><span class="line"><span class="cl">Host            <span class="nb">alias</span>            <span class="c1">#自定义别名</span>
+</span></span><span class="line"><span class="cl">HostName        0.0.0.0          <span class="c1">#替换为你的ssh服务器ip或domain</span>
+</span></span><span class="line"><span class="cl">Port            <span class="m">22</span>               <span class="c1">#ssh服务器端口，默认为22</span>
+</span></span><span class="line"><span class="cl">User            root             <span class="c1">#ssh服务器用户名</span>
+</span></span><span class="line"><span class="cl">IdentityFile    ~/.ssh/id_rsa    <span class="c1">#第一个步骤生成的公钥文件对应的私钥文件</span>
+</span></span></code></pre></div><p>此时就可以使用 ssh进行登录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh <span class="nb">alias</span>
+</span></span></code></pre></div><h2 id="禁止-linux-使用账号密码登录">禁止 Linux 使用账号密码登录</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">% <span class="nb">cd</span> /etc/ssh/ <span class="p">&amp;</span> vi sshd_config
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># sshd_config:</span>
+</span></span><span class="line"><span class="cl">RSAAuthentication yes
+</span></span><span class="line"><span class="cl">PubkeyAuthentication yes
+</span></span><span class="line"><span class="cl">AuthorizedKeysFile      .ssh/authorized_keys
+</span></span><span class="line"><span class="cl"><span class="c1">#AuthorizedKeysCommand none</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#AuthorizedKeysCommandRunAs nobody</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#默认PasswordAuthentication 为yes,即允许密码登录，改为no后，禁止密码登录</span>
+</span></span><span class="line"><span class="cl">PasswordAuthentication no
+</span></span><span class="line"><span class="cl"><span class="c1"># end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">% systemctl restart sshd.service
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

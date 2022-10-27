@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pandas on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/pandas/</link>
+    <description>Recent content in Pandas on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 17 Dec 2021 09:23:12 +0000</lastBuildDate><atom:link href="https://laoooo.cn/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas学习笔记（一）</title>
+      <link>https://laoooo.cn/pandas%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</link>
+      <pubDate>Fri, 17 Dec 2021 09:23:12 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/pandas%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</guid>
+      <description>Pandas学习笔记（一） 认识 DataFrame DataFrame是一种Pandas的数据格式，它类似于Excel表格，可以用来处理各种不同的数据。 他的强大</description>
+      <content:encoded><![CDATA[<h1 id="pandas学习笔记一">Pandas学习笔记（一）</h1>
+<h2 id="认识-dataframe">认识 DataFrame</h2>
+<blockquote>
+<p>DataFrame是一种Pandas的数据格式，它类似于Excel表格，可以用来处理各种不同的数据。
+他的强大之处还不限于此，他可以处理二维甚至是多维数据，支持科学计算，对各种数据格式支持友好&hellip;</p>
+</blockquote>
+<p>例如，你可以这样构建一个df（DataFrame）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">d</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df</span>
+</span></span><span class="line"><span class="cl">   <span class="n">col1</span>  <span class="n">col2</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>     <span class="mi">1</span>     <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>     <span class="mi">2</span>     <span class="mi">4</span>
+</span></span></code></pre></div><p>同样你也可以这样构建一个df：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>                    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df2</span>
+</span></span><span class="line"><span class="cl">   <span class="n">a</span>  <span class="n">b</span>  <span class="n">c</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">7</span>  <span class="mi">8</span>  <span class="mi">9</span>
+</span></span></code></pre></div><p>还可以这样：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)],</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>                 <span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="s2">&#34;i4&#34;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&#34;b&#34;</span><span class="p">,</span> <span class="s2">&#34;i4&#34;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&#34;c&#34;</span><span class="p">,</span> <span class="s2">&#34;i4&#34;</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">df3</span>
+</span></span><span class="line"><span class="cl">   <span class="n">c</span>  <span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="mi">3</span>  <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="mi">6</span>  <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="mi">9</span>  <span class="mi">7</span>
+</span></span></code></pre></div><p>这里只是简单介绍一下<code>DataFrame</code>的创建方式，创建它的方法有很多，这里就不过多赘述。</p>
+<h2 id="数据分析">数据分析</h2>
+<blockquote>
+<p>Pandas 在用于数据分析方面也是一个很强很好用的工具，它甚至可以联合<code>matplotlib</code>进行绘图。</p>
+</blockquote>
+<p>例如，我们可以使用它来检测数据中是否含有空值：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">  <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;test.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nb">id</span>   <span class="n">name</span>  <span class="n">market_rate</span>    <span class="n">sex</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>  <span class="kc">False</span>  <span class="kc">False</span>        <span class="kc">False</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>  <span class="kc">False</span>  <span class="kc">False</span>         <span class="kc">True</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>  <span class="kc">False</span>  <span class="kc">False</span>        <span class="kc">False</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>  <span class="kc">False</span>  <span class="kc">False</span>        <span class="kc">False</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>  <span class="kc">False</span>  <span class="kc">False</span>        <span class="kc">False</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>  <span class="kc">False</span>  <span class="kc">False</span>         <span class="kc">True</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>  <span class="kc">False</span>  <span class="kc">False</span>         <span class="kc">True</span>  <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>  <span class="kc">False</span>  <span class="kc">False</span>        <span class="kc">False</span>  <span class="kc">False</span>
+</span></span></code></pre></div><p>删除空值行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="nb">id</span>     <span class="n">name</span>  <span class="n">market_rate</span> <span class="n">sex</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>   <span class="mi">1</span>   <span class="n">xiaomi</span>          <span class="mf">1.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="mi">2</span>   <span class="n">huawei</span>          <span class="n">NaN</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mi">3</span>    <span class="n">apple</span>          <span class="mf">3.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mi">4</span>    <span class="n">meizu</span>          <span class="mf">4.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>     <span class="n">vivo</span>          <span class="mf">5.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="mi">6</span>     <span class="n">oppo</span>          <span class="n">NaN</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>   <span class="mi">7</span>  <span class="n">oneplus</span>          <span class="n">NaN</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>   <span class="mi">8</span>    <span class="n">nokia</span>          <span class="mf">8.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="nb">id</span>    <span class="n">name</span>  <span class="n">market_rate</span> <span class="n">sex</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>   <span class="mi">1</span>  <span class="n">xiaomi</span>          <span class="mf">1.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mi">3</span>   <span class="n">apple</span>          <span class="mf">3.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mi">4</span>   <span class="n">meizu</span>          <span class="mf">4.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>    <span class="n">vivo</span>          <span class="mf">5.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>   <span class="mi">8</span>   <span class="n">nokia</span>          <span class="mf">8.0</span>   <span class="n">M</span>
+</span></span></code></pre></div><p>填充空值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;market_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="nb">id</span>     <span class="n">name</span>  <span class="n">market_rate</span> <span class="n">sex</span>
+</span></span><span class="line"><span class="cl"><span class="mi">0</span>   <span class="mi">1</span>   <span class="n">xiaomi</span>          <span class="mf">1.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>   <span class="mi">2</span>   <span class="n">huawei</span>          <span class="mf">4.2</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>   <span class="mi">3</span>    <span class="n">apple</span>          <span class="mf">3.0</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span>   <span class="mi">4</span>    <span class="n">meizu</span>          <span class="mf">4.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>   <span class="mi">5</span>     <span class="n">vivo</span>          <span class="mf">5.0</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>   <span class="mi">6</span>     <span class="n">oppo</span>          <span class="mf">4.2</span>   <span class="n">F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>   <span class="mi">7</span>  <span class="n">oneplus</span>          <span class="mf">4.2</span>   <span class="n">M</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span>   <span class="mi">8</span>    <span class="n">nokia</span>          <span class="mf">8.0</span>   <span class="n">M</span>
+</span></span></code></pre></div><p>分类聚合</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;sex&#39;</span><span class="p">)[</span><span class="s1">&#39;market_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">sex</span>
+</span></span><span class="line"><span class="cl"><span class="n">F</span>    <span class="mf">2.733333</span>
+</span></span><span class="line"><span class="cl"><span class="n">M</span>    <span class="mf">5.080000</span>
+</span></span></code></pre></div><p>数据可视化</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&#34;pie&#34;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;market_rate&#39;</span><span class="p">,</span> <span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><p><img loading="lazy" src="https://ae01.alicdn.com/kf/H329a6d896e724fa39f26629863e857f6K.png" alt="matplotlib 绘图"  />
+</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>js on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/js/</link>
+    <description>Recent content in js on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 11 Mar 2021 22:10:46 +0000</lastBuildDate><atom:link href="https://laoooo.cn/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>reveal.js一个绝妙的Web演示文稿框架</title>
+      <link>https://laoooo.cn/reveal.js%E4%B8%80%E4%B8%AA%E7%BB%9D%E5%A6%99%E7%9A%84web%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/reveal.js%E4%B8%80%E4%B8%AA%E7%BB%9D%E5%A6%99%E7%9A%84web%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF%E6%A1%86%E6%9E%B6/</guid>
+      <description>主题 🐦 鸽了。。。 找个时间补上。。。 好几个月过去了，下次一定补上，下次一定（咕咕咕</description>
+      <content:encoded><![CDATA[<h1 id="主题">主题</h1>
+<p>🐦 鸽了。。。</p>
+<p>找个时间补上。。。</p>
+<p>好几个月过去了，下次一定补上，下次一定（咕咕咕</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Devices on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/categories/devices/</link>
+    <description>Recent content in Devices on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language><atom:link href="https://laoooo.cn/categories/devices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPhone 12</title>
+      <link>https://laoooo.cn/iphone-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/iphone-12/</guid>
+      <description>来迟了 派送的时候正在上课，索性在教室里直接开箱了。没来得及拍开箱视频和照片，简单体验了一下，简单介绍一下iPhone 12的使用体验。 实拍图 使</description>
+      <content:encoded><![CDATA[<h1 id="来迟了">来迟了</h1>
+<p>派送的时候正在上课，索性在教室里直接开箱了。没来得及拍开箱视频和照片，简单体验了一下，简单介绍一下iPhone 12的使用体验。</p>
+<h1 id="实拍图">实拍图</h1>
+<p><img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/48cd90b3a532b.jpg" alt="Shot By iPhone 11"  />
+
+<img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/d1db14af9a1f0.jpg" alt="Shot By iPhone 11"  />
+
+<img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/319f75ca183bb.jpg" alt="iPhone 12 拍摄样张"  />
+</p>
+<h1 id="使用体验">使用体验</h1>
+<h2 id="5g">5G</h2>
+<p>由于<code>家境贫寒</code>,用不起5G。但是我发现4G卡也是可以用5G信号的，经过测试，4G卡在5G模式下有着比纯4G更好的信号质量以及更高的带宽，基本可以达到4G的理论峰值。所以，得出结论：5G手机＋4G套餐 = 更好的4G体验（狗头）</p>
+<p><img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/b753462aaa527.png" alt="4G套餐&#43;5G信号下的测速"  />
+</p>
+<h2 id="电池">电池</h2>
+<p>抛开同步数据的磨合使用规律的那两天，续航的表现基本为轻度使用可以做到1.5到两天一充， 游戏画质全满的情况下掉电速度较快。以<code>4k 60帧</code>的画质，刷街一下午还能剩个<code>22%</code>左右的电量。实际拍摄的素材大小为22G左右。</p>
+<p>在夜间充满电后待机，一整晚下来基本不掉电，总体来看符合基本的预期，甚至有点超越预期水平。</p>
+<h1 id="直角机身">直角机身</h1>
+<p>手感的确类似祖师爷<code>5S</code>, 有一种我在用<code>iPhone 5s Super Plus</code>的感觉。后盖玻璃是名副其实的指纹收集器，这个没得说，但好在手感确实挺不错。</p>
+<h1 id="杜比音效和杜比视界">杜比音效和杜比视界</h1>
+<p>这里强烈表扬一下这代的扬声器和屏幕，在观看带有<a href="https://c.laoooo.cn:88/index.php?share/file&amp;user=1&amp;sid=thnqjeZM">Dolby Atom</a>的视频时，双扬声器的体验妙不可言，在安静的环境中，其体验凭我个人的感受来说，我觉得可以用“影院级”体验来描述它。与其相比，HDR虽然也很不错，但没有杜比音效这么直观的感受。</p>
+<h1 id="nfc-与-城市交通">NFC 与 城市交通</h1>
+<p><code>Apple Pay</code>现在支持<strong>交通联合</strong>，目前我了解到的支持全国通用的交通卡有<code>北京市政一卡通</code>，在长沙还有<code>潇湘卡</code>，这里不多介绍了。结合云闪付的活动，在今年的12月结束前，每天有两次一分钱搭公交的机会，虽然说是每日限量，但好像目前知道的人并不多，所以目前可以放心刷<code>手动狗头</code>。</p>
+<p><img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/bfb4cfa7cbae9.png" alt="一分钱公交"  />
+
+<img loading="lazy" src="https://img.laoooo.cn:88/2020/12/10/253da5f4c6f98.png" alt="Apple Pay的卡片们"  />
+</p>
+<h1 id="结语">结语</h1>
+<p>以上仅代表个人观点，且为本人直观感受，最终体验以您的为准（再次狗头）</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

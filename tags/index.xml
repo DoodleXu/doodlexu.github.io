@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/</link>
+    <description>Recent content in Tags on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 13 May 2022 13:59:38 +0000</lastBuildDate><atom:link href="https://laoooo.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS</title>
+      <link>https://laoooo.cn/tags/ios/</link>
+      <pubDate>Fri, 13 May 2022 13:59:38 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/ios/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>https://laoooo.cn/tags/swift/</link>
+      <pubDate>Fri, 13 May 2022 13:59:38 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/swift/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>https://laoooo.cn/tags/xcode/</link>
+      <pubDate>Fri, 13 May 2022 13:59:38 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/xcode/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>DataFrame</title>
+      <link>https://laoooo.cn/tags/dataframe/</link>
+      <pubDate>Fri, 17 Dec 2021 09:23:12 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/dataframe/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>https://laoooo.cn/tags/pandas/</link>
+      <pubDate>Fri, 17 Dec 2021 09:23:12 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/pandas/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://laoooo.cn/tags/python/</link>
+      <pubDate>Fri, 17 Dec 2021 09:23:12 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/python/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Scrapy</title>
+      <link>https://laoooo.cn/tags/scrapy/</link>
+      <pubDate>Fri, 26 Nov 2021 11:03:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/scrapy/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>爬虫框架</title>
+      <link>https://laoooo.cn/tags/%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Fri, 26 Nov 2021 11:03:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://laoooo.cn/tags/django/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:56 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/django/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://laoooo.cn/tags/mysql/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:56 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/mysql/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>web框架</title>
+      <link>https://laoooo.cn/tags/web%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:56 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/web%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>数据库</title>
+      <link>https://laoooo.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:56 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://laoooo.cn/tags/vscode/</link>
+      <pubDate>Tue, 16 Nov 2021 14:04:13 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/vscode/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>快捷键</title>
+      <link>https://laoooo.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Tue, 16 Nov 2021 14:04:13 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>人脸识别贩卖机</title>
+      <link>https://laoooo.cn/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E8%B4%A9%E5%8D%96%E6%9C%BA/</link>
+      <pubDate>Mon, 15 Nov 2021 11:31:09 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E8%B4%A9%E5%8D%96%E6%9C%BA/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>支付宝</title>
+      <link>https://laoooo.cn/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</link>
+      <pubDate>Mon, 15 Nov 2021 11:31:09 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>爬虫</title>
+      <link>https://laoooo.cn/tags/%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Thu, 11 Nov 2021 14:52:47 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E7%88%AC%E8%99%AB/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>信息安全</title>
+      <link>https://laoooo.cn/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Sat, 15 May 2021 07:50:48 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>入门</title>
+      <link>https://laoooo.cn/tags/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 15 May 2021 07:50:48 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E5%85%A5%E9%97%A8/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>靶场</title>
+      <link>https://laoooo.cn/tags/%E9%9D%B6%E5%9C%BA/</link>
+      <pubDate>Sat, 15 May 2021 07:50:48 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E9%9D%B6%E5%9C%BA/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>HDMI</title>
+      <link>https://laoooo.cn/tags/hdmi/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/hdmi/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://laoooo.cn/tags/js/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/js/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://laoooo.cn/tags/macos/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/macos/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>数字音频</title>
+      <link>https://laoooo.cn/tags/%E6%95%B0%E5%AD%97%E9%9F%B3%E9%A2%91/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E6%95%B0%E5%AD%97%E9%9F%B3%E9%A2%91/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>音量</title>
+      <link>https://laoooo.cn/tags/%E9%9F%B3%E9%87%8F/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/%E9%9F%B3%E9%87%8F/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://laoooo.cn/tags/linux/</link>
+      <pubDate>Mon, 08 Mar 2021 14:10:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/linux/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://laoooo.cn/tags/mac/</link>
+      <pubDate>Mon, 08 Mar 2021 14:10:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/mac/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://laoooo.cn/tags/ssh/</link>
+      <pubDate>Mon, 08 Mar 2021 14:10:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/ssh/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://laoooo.cn/tags/code/</link>
+      <pubDate>Thu, 04 Mar 2021 20:34:13 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/code/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>https://laoooo.cn/tags/devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/devices/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>IP地址</title>
+      <link>https://laoooo.cn/tags/ip%E5%9C%B0%E5%9D%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/tags/ip%E5%9C%B0%E5%9D%80/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

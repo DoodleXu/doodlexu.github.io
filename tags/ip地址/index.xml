@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IP地址 on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/ip%E5%9C%B0%E5%9D%80/</link>
+    <description>Recent content in IP地址 on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language><atom:link href="https://laoooo.cn/tags/ip%E5%9C%B0%E5%9D%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IP地址</title>
+      <link>https://laoooo.cn/ip%E5%9C%B0%E5%9D%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/ip%E5%9C%B0%E5%9D%80/</guid>
+      <description>IP地址 IP地址（英语：IP Address，全称Internet Protocol Address），又译为网际协议地址、互联网协议地址。当设备连接网络，设备</description>
+      <content:encoded><![CDATA[<h1 id="ip地址">IP地址</h1>
+<blockquote>
+<p>IP地址（英语：IP Address，全称Internet Protocol Address），又译为网际协议地址、互联网协议地址。当设备连接网络，设备将被分配一个IP地址，用作标识。通过IP地址，设备间可以互相通讯，如果没有IP地址，我们将无法知道哪个设备是发送方，无法知道哪个是接收方。IP地址有两个主要功能：标识设备或网络 和 寻址（英语：location addressing）。
+常见的IP地址分为 IPv4 与 IPv6 两大类，IP地址由一串数字组成。IPv4 由十进制数字组成，并以点分隔，如：172.16.254.1； IPv6 由十六进制数字组成，以冒号分割，如：2001:db8:0:1234:0:567:8:1。</p>
+</blockquote>
+<h2 id="功能">功能</h2>
+<p><strong>IP地址有两个主要的功能：</strong></p>
+<p>标识主机。更具体地说，标识其网络接口，并且提供主机在网络中的位置。
+网络寻址 ， 网际协议（缩写：IP）的一个重要机制就是网络寻址（英语：internet address）。该功能的目的是将 数据报 从一个网络模块 送到 目的地。在发送的整个过程，IP地址（address）充当着目的地的位置，域名（name）意味着我们要找什么，路由（route）代表着如何到达目的地的这个过程。每个IP数据包的标头包含了发送主机的IP地址和目的主机的IP地址。</p>
+<h2 id="子网">子网</h2>
+<p>IP网络可以在<code>IPv4</code>和<code>IPv6</code>中划分子网。为此，将IP地址识别成由两部分组成：网络前缀（高位）和其余的位（称为其余字段，主机标识符或者接口标识符（IPv6）），用于网络内的主机编号。子网掩码（subnet mask）或无类别域间路由（英语：Classless Inter-Domain Routing，简称：CIDR）表示法确定了IP地址如何分为网络部分和主机部分。</p>
+<p>子网掩码一词仅用于IPv4地址中。但是，两个版本的IP地址都使用CIDR概念和符号。在此，在IP地址后面加斜杠和用于标识网络部分的位数（十进制），也称路由前缀。例如：IPv4地址及其子网掩码分别可以是 192.0.2.1 和 255.255.255.0 。因为IP地址的前24位表示网络和子网，所以相同的IP地址和子网的CIDR表示法为192.0.2.1/24。</p>
+<h2 id="网关">网关</h2>
+<p>网关(gateway)其作用为NAT(网络地址转换)和转发客户端与其他服务器通信的数据。举个不严谨的例子：如果将局域网看作是一个小区, 那么网关就是小区的门卫。如果在快递中, 他也有着类似于<code>分拨中心</code>的作用。</p>
+<h2 id="公网ip--私网ip">公网IP &amp; 私网IP</h2>
+<p>公网IP就是可以在互联网上直接寻址, 无需进行<em>转换</em>。因此, 拿我们现实生活举例子, 比如你想找一个叫徐小唠的朋友, 他家的地址是: <code>北京市 朝阳区 针织路23号楼 xxx号</code>。那么, <code>北京市</code>就是一个公网地址, 因为世界上就一个北京市, 放在哪我们都知道他是在中国, 是咱们的首都。而<code>朝阳区 针织路 23号楼 xxx号</code>就是一个私网地址, 因为世界上可能不止一个朝阳区, 同名的道路更是数不胜数。</p>
+<h2 id="数据包的投递">数据包的投递</h2>
+<p>接着楼上的例子, 假如你需要和你的朋友徐小唠通信, 此时我们将数据包以一封信代替。那么这封信(数据包)你写好后, 写上地址(IP地址)就寄出了, 你完全不用管他会走那条路(路由选择), 通过什么交通工具(数据通信设备, 如交换机、路由器等)。</p>
+<p>你只管投递到邮筒(网卡)里, 这个时候, 邮差小哥取到了你的信, 就去问门卫(网关)这是哪个小区, 并把你小区的地址和门牌号(私有地址)换成了较大的地域名称(公网地址), 而以上换地址的过程, 我们称之为网络地址转换(NAT)。</p>
+<p>接下来, 邮差小哥把你的信带到了分拨中心(路由器), 由于分拨中心每天要处理海量的数据, 所以他只会随便瞟一眼你的目的地址(目标的公网IP), 就给你扔到发往北京的车上了。</p>
+<p>镜头一转, 我们的小哥已经把车开到了北京了。这个时候大的地址已经不管用了, 毕竟也没谁的家叫北京。这个时候小哥就开始拆开第一层包裹, 找到了二级地址朝阳区, 于是你的信就被发往了朝阳区分拨中心(目的网络的路由器), 人家看了眼, &ldquo;针织路的包裹啊, 那个小刘, 你给送过去吧&rdquo; &ldquo;好嘞!&rdquo;, 小刘屁颠屁颠就给你送到了徐小唠的小区(交换机)了, 并交给了徐小唠小区的门卫。 人保安看了一眼, 徐小唠(MAC)的包裹啊, 这我熟, 转眼就给送到了。</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

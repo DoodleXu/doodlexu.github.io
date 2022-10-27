@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HDMI on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/tags/hdmi/</link>
+    <description>Recent content in HDMI on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 11 Mar 2021 22:10:46 +0000</lastBuildDate><atom:link href="https://laoooo.cn/tags/hdmi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对HDMI输出音量调节的一些看法</title>
+      <link>https://laoooo.cn/%E5%AF%B9hdmi%E8%BE%93%E5%87%BA%E9%9F%B3%E9%87%8F%E8%B0%83%E8%8A%82%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9C%8B%E6%B3%95/</link>
+      <pubDate>Thu, 11 Mar 2021 22:10:46 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/%E5%AF%B9hdmi%E8%BE%93%E5%87%BA%E9%9F%B3%E9%87%8F%E8%B0%83%E8%8A%82%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9C%8B%E6%B3%95/</guid>
+      <description>起因 一次偶然的机会，在用macOS外接显示器的时候，用HDMI接口连接带音响的屏幕时，无法调节音量。显示所选设备没有输出控制。随即去找原因，</description>
+      <content:encoded><![CDATA[<h1 id="起因">起因</h1>
+<p>一次偶然的机会，在用macOS外接显示器的时候，用HDMI接口连接带音响的屏幕时，无法调节音量。显示<code>所选设备没有输出控制</code>。随即去找原因，本以为是Bug这么简单，没想到这居然还是个<code>feature</code>。</p>
+<h1 id="背后的故事">背后的故事</h1>
+<p>首先<code>HDMI</code>全称叫高清多媒体接口（High Definition Multimedia Interface，HDMI）是一种全数字化视频和声音发送接口，可以发送未压缩的音频及视频信号。之所以他能出现上文所描述的现象，是因为 macOS 检测到你HDMI接口所连接的设备支持音频输出时，他会以<code>数字音频的方式输出</code>而不走 DAC（数模转换器），系统的音量控制好像只能是经过 DAC 出来的模拟信号来控制，而数字音频输出要保证信号的完整性，从而绕过了 DAC 所以不能调节音量。</p>
+<p>其次，调节音量这个功能应该由功放来做，因为一旦调整了音量就说明系统已经改变了数字流，而不是“无损”音源了。并且许多情况使用HDMI作为输出的时候，可能不仅仅是往外放上接。这种情况如果要做进一步处理，就要尽量保证处理流程中的每一步都不能损失信息，这也是数字信号诞生的目的。用一种不太严谨的说法，数字信号本身人就不能被直接听到，后面要接 DAC 这样就会造成信号的失真。综上所述，造成信息损失的步骤应该放在最后一步，这也是macOS在HDMI输出音频信号时，无法调节音量的根本原因。</p>
+<h1 id="特例">特例</h1>
+<p>在上述条件的基础上，我也找到了<code>特例</code>，那就是我们的视窗系统——Windows。它无视输出接口类型与协议。系统默认在输出前就过了一遍 DAC， 所以可以支持系统条件HDMI的音量。</p>
+<h1 id="我的一些看法">我的一些看法</h1>
+<p>这件事情的一开始我也以为是macOS的Bug，在网上找方法，随即看到了<a href="https://www.v2ex.com/t/242238?p=2">V2EX</a>上的讨论, 才涨了见识。于是整理出这篇文章。不过很可惜的是，这篇帖子已经沦为了撕逼贴。正如上面的特例所描述那样，其实这两款系统的处理方式都没有错，并不至于撕出个谁对谁错。</p>
+<p>出于用户的方便考虑，支持直接调节音量也挺好，毕竟需要无损音源的专业人员，和所有其他用户的数量比起来，音质好像也没那么重要了。</p>
+<p>出于理性考虑，macOS的做法也是正确的。将有损步骤放到最后一步，以得到最佳音源。</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Lao&#39;s Blog</title>
+    <link>https://laoooo.cn/categories/</link>
+    <description>Recent content in Categories on Lao&#39;s Blog</description>
+    <image>
+      <url>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://laoooo.cn/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 13 May 2022 13:59:38 +0000</lastBuildDate><atom:link href="https://laoooo.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS开发</title>
+      <link>https://laoooo.cn/categories/ios%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Fri, 13 May 2022 13:59:38 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/ios%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>知识</title>
+      <link>https://laoooo.cn/categories/%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Fri, 26 Nov 2021 11:03:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>技巧</title>
+      <link>https://laoooo.cn/categories/%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 16 Nov 2021 14:04:13 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>生活</title>
+      <link>https://laoooo.cn/categories/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Mon, 15 Nov 2021 11:31:09 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>技术</title>
+      <link>https://laoooo.cn/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 08 Mar 2021 14:10:01 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://laoooo.cn/categories/code/</link>
+      <pubDate>Thu, 04 Mar 2021 20:34:13 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/code/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>https://laoooo.cn/categories/devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://laoooo.cn/categories/devices/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
